@@ -1,0 +1,14 @@
+{
+  "name": "githubsync",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Import previous accepted LeetCode submissions and organize them topic-wise for GitHub.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "sync": "node src/index.mjs",
+    "check": "node --check src/index.mjs && node --check src/leetcode.mjs && node --check src/topics.mjs"
+  }
+}
